@@ -16,5 +16,16 @@
   			<meta name="author" content="teoespero">
 	</head>
 	<body>
+		<h1 id="header">Not clicked</h1>
+		<img src="mouse-unclick.png" id="myImg">
+		<button id="myButton">Click Me</button>
+		<script type="text/javascript">
+			document.getElementById("myButton").addEventListener("click", function gotClicked(){
+				document.getElementById("header").textContent = "Got clicked";
+				document.getElementById("myImg").src = "mouse-click.png";
+			});
+
+			
+		</script>
 	</body>
 </html>
